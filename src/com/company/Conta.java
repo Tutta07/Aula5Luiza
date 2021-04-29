@@ -1,11 +1,11 @@
 package com.company;
 
 public class Conta {
-    int numero;
-    String dono;
-    double saldo;
+    private int numero;
+    private String dono;
+    private double saldo;
 
-    //public Conta(){}
+    public Conta(){}
     public Conta(int numero, String dono, double saldo) {
         this.numero = numero;
         this.dono = dono;
@@ -16,25 +16,10 @@ public class Conta {
         return numero;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
-    public String getDono() {
-        return dono;
-    }
-
-    public void setDono(String dono) {
-        this.dono = dono;
-    }
-
     public double getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(double saldo) {
-        this.saldo = saldo;
-    }
 
     public void Sacar(double valor){
         if(this.saldo>=valor){
@@ -53,5 +38,18 @@ public class Conta {
             System.out.println("A sua conta não possui saldo suficiente para realizar a transferência ");
         }
 
+    }
+    public boolean Sacarb(double valor){
+        if(this.saldo >= valor){
+            this.saldo-=valor;
+            return true;
+        }
+        else
+            return false;
+    }
+
+    //metodo de taina
+    public void Transferencia (double valor){
+        this.saldo+=valor;
     }
 }

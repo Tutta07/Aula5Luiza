@@ -1,10 +1,14 @@
 package com.company;
 
 public class Pessoa {
-    String nome;
-    String CPF;
-    String endereco;
-    Conta conta;
+   private String nome;
+   private String CPF;
+   private String endereco;
+   private Conta conta;
+
+   public void adicionarConta(Conta conta){
+       this.conta = conta;
+   }
 
     public Pessoa(String nome, String CPF, String endereco, Conta conta) {
         this.nome = nome;
