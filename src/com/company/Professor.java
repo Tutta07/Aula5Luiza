@@ -45,10 +45,13 @@ public class Professor {
     public double getSalario() {
         return salario;
     }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
+//
+//    public void setSalario(double salario) {
+//        this.salario = salario;
+//    }
+    public double setSalarioProfessor( int qtdaula){
+        this.salario= 29 *qtdaula;
+        return this.salario;
     }
-
 
 }
