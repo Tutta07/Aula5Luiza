@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         //Criando um cliente
         Pessoas cliente = new Pessoas("Nelismy","34567890213","Rua do barquito");
